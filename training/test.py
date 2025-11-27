@@ -17,7 +17,7 @@ print("Tokenizer Loaded")
 inception_v3_model = InceptionV3(weights='imagenet',include_top=False,pooling='avg')
 cnn_ouput_dim = inception_v3_model.output_shape[1]
 max_caption_length = 34
-def greedy_generator(image_features):
+def caption_generator(image_features):
     in_text = 'start '
     for _ in range(max_caption_length):
         sequence = tokenizer.texts_to_sequences([in_text])[0]
@@ -36,5 +36,5 @@ def greedy_generator(image_features):
 
 
 image_test1 = extract_image_features(inception_v3_model,"test_5.webp")
-cap = greedy_generator(image_test1)
+cap = caption_generator(image_test1)
 print(cap)

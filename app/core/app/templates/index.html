@@ -1,0 +1,9 @@
+<form method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="file" name="image" required>
+    <button type="submit">Generate Caption</button>
+</form>
+
+{% if caption %}
+<p><b>Caption:</b> {{ caption }}</p>
+{% endif %}
