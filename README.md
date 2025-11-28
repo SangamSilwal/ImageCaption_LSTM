@@ -15,8 +15,8 @@ Users can upload an image, and the system generates a relevant caption describin
 
 The backend is built using **Django**, and the model is trained using **TensorFlow/Keras**.
 
-For Model training go to the link [Training-Model](training/README.md)
-
+For Model training description go to the link - [Training-Model](training/README.md)
+For learning about Model Architecture go to the link - - [Model Architecture](models/README.md)
 ---
 
 ## Root Directory
@@ -75,11 +75,6 @@ models/
 └── tokenizer_v1.pkl
 ```
 
-### Breakdown
-
-- `caption_model_v1.keras`: Trained Keras model for image captioning
-- `tokenizer_v1.pkl`: Pickled tokenizer object for text processing
-
 ---
 
 ## Training Directory
@@ -94,14 +89,6 @@ training/
 ├── models_utils.py
 └── test.py
 ```
-
-### Breakdown
-
-- `base.py`: Base configuration and constants
-- `import_requirements.py`: Script to check and import required dependencies
-- `model.py`: Model architecture definition
-- `models_utils.py`: Utility functions for model training (data loading, preprocessing, etc.)
-- `test.py`: Script to test the trained model
 
 ---
 
