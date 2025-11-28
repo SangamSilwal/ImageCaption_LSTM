@@ -15,6 +15,8 @@ Users can upload an image, and the system generates a relevant caption describin
 
 The backend is built using **Django**, and the model is trained using **TensorFlow/Keras**.
 
+For Model training go to the link [Training-Model](training/README.md)
+
 ---
 
 ## Root Directory
